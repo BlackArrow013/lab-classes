@@ -23,6 +23,12 @@ public class Student
         name = fullName;
         id = studentID;
         credits = 0;
+        if (fullName.length() < 4) {
+            System.out.println("Introduzca al menos 4 carácteres en el nombre.");
+        }
+        if (studentID.length() < 3) {
+            System.out.println("Introduzca al menos 3 carácteres en el id.");
+        }
     }
 
     /**
@@ -82,4 +88,5 @@ public class Student
     {
         System.out.println(name + ", student ID: " + id + ", credits: " + credits);
     }
+    
 }
